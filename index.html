@@ -370,6 +370,73 @@ body{
 
 .notice{text-align:center;margin-top:12px;font-size:9px;color:#c8a84b55;letter-spacing:2px}
 
+/* ====== MOBILE RESPONSIVE ====== */
+@media (max-width: 600px) {
+  .game { padding: 6px 4px; }
+
+  /* Jackpot bar más compacto */
+  .jackpot-bar { padding: 5px 8px; border-radius: 20px; margin-bottom: 6px; }
+  .jp-tier { font-size: 8px; letter-spacing: 0; }
+  .jp-amount { font-size: 11px; }
+
+  /* Título más pequeño */
+  .game-title { font-size: 28px; letter-spacing: 2px; }
+  .game-subtitle { font-size: 9px; letter-spacing: 3px; margin-bottom: 10px; }
+
+  /* Máquina sin tanto padding */
+  .machine-wrap { padding: 10px 8px; border-radius: 14px; }
+  .machine-wrap::before { font-size: 9px; letter-spacing: 2px; }
+
+  /* Multiplicadores */
+  .reel-mults { gap: 4px; margin-bottom: 6px; }
+  .reel-mult { font-size: 13px; border-radius: 5px; padding: 3px 0; }
+
+  /* Grid de carretes — más grande en móvil */
+  .reels-container { padding: 4px; }
+  .reels-grid { gap: 4px; }
+  .reel-col { gap: 4px; }
+  .cell { border-radius: 8px; border-width: 2px; }
+
+  /* Mensaje */
+  .msg-bar { font-size: 13px; min-height: 22px; padding: 3px 0; margin-bottom: 6px; }
+
+  /* Controles — reorganizar para móvil */
+  .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 2px;
+  }
+
+  .credits-group { gap: 8px; order: 1; width: 100%; justify-content: center; }
+  .stat-box { padding: 6px 14px; min-width: 80px; border-radius: 8px; }
+  .stat-label { font-size: 8px; }
+  .stat-value { font-size: 18px; }
+
+  /* Spin al centro abajo */
+  .spin-area { order: 3; width: 100%; align-items: center; }
+  .spin-btn { width: 110px; height: 110px; }
+
+  /* Apuesta y suerte al lado */
+  .bet-controls-wrap { order: 2; }
+  .luck-meter { order: 4; }
+  .luck-wave-wrap { width: 100px; }
+
+  /* Paytable en columna única */
+  .pay-grid { grid-template-columns: 1fr; gap: 4px; }
+  .pay-row { padding: 4px 8px; }
+  .pay-name { font-size: 10px; }
+  .pay-mult-text { font-size: 14px; }
+
+  /* Bet buttons más grandes para touch */
+  .bet-btn { width: 36px; height: 36px; font-size: 18px; }
+  .bet-val { font-size: 18px; }
+  .bet-label { font-size: 10px; }
+
+  /* Mute button */
+  .mute-btn { top: 8px; right: 8px; width: 40px; height: 40px; font-size: 18px; }
+}
+
 .mute-btn{
   position:fixed;top:14px;right:14px;z-index:100;
   background:#1a1000cc;
